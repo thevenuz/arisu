@@ -3,8 +3,8 @@ import icon from '../assets/images/icon.png';
 
 const Footer = () => {
   return (
-    // Footer
-    <div className='flex w-full shadow-[0px_0px_3px_rgba(3,102,214,0.3)] font-Outfit'>
+    // Footer 
+    <div className='flex w-full shadow-[0px_0px_4px_rgba(0,0,0,0.3)]'>
         <div className='flex w-4/5 mx-auto px-6 py-6 justify-between'>
             {/* Title and Icon */}
             
@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className='align-middle px-2'>
                     <img className='w-24 h-24 rounded-full' src={icon} alt='icon'/>
                 </div>
-                <div className='align-middle font-bold text-lg mt-2'>
+                <div className='align-middle font-bold text-lg mt-2 leading-tight font-Outfit'>
                     <p>
                         ARISU<br/>
                         SAKAYANAGI

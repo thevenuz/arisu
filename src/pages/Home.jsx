@@ -5,7 +5,7 @@ import RecentsSection from '../components/Home/RecentsSection';
 
 const Home = () => {
   return (
-    <div className='flex container bg-blue-300 w-screen h-full'>
+    <div className='flex container  w-full h-full'>
         <div className='w-4/5 mx-auto'>
             <Welcome/>
             <LandingPageImage/>
