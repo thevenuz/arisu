@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link} from "react-router-dom";
 import icon from '../assets/images/icon.png'
 
 const Navbar = () => {
@@ -11,10 +12,13 @@ const Navbar = () => {
                     <img className='w-14 h-14 rounded-full' src={icon} alt='icon'/>
                 </div>
                 <div className='align-middle font-bold text-lg leading-tight text-white'>
+                    <Link to="/">
                     <p>
                         ARISU<br/>
                         SAKAYANAGI
                     </p>
+                    </Link>
+                        
                 </div>
             </div>
 
@@ -22,13 +26,19 @@ const Navbar = () => {
             <div className='flex-1 items-center justify-end align-middle flex'>
                 <div className='flex space-x-4 align-middle px-2 font-medium text-white'>
                     <div className='align-middle'>
-                        <p>Home</p>
+                        <Link to="/" className="">
+                            <p>Home</p>
+                        </Link>
                     </div>
                     <div className='align-middle'>
-                        <p>Gallery</p>
+                        <Link to="/gallery" className="">
+                            <p>Gallery</p>
+                        </Link>
                     </div>
                     <div className='align-middle'>
-                        <p>Short Stories</p>
+                        <Link to="/shortstories" className="">
+                            <p>Short Stories</p>
+                        </Link>
                     </div>
                     <div className='align-middle'>
                         <p>Fanfics</p>
