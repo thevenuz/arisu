@@ -6,9 +6,10 @@ const ShortStoryListItem = ({story}) => {
 
     const navigate = useNavigate();
 
-    const loadSS = (event, source) => {
+    const loadSS = (event, story) => {
         event.preventDefault();
-        navigate('./data/shortstories/vol6_behind_the_scenes.md')
+        console.log(story.Title)
+        navigate(`/ss/${story.Title}`, {state: story});
     }
 
   return (
@@ -16,7 +17,7 @@ const ShortStoryListItem = ({story}) => {
       <p className='font-semibold font-Outfit list-disc'>{story.Volume}</p>
       <ul className='list-disc'>
         {story.Stories.map((storyItem) => {
-           return <li className='ml-10'><a href='#' onClick={event => loadSS(event, storyItem.Source)} className='underline'>{storyItem.Title}</a></li>
+           return <li className='ml-10'><a href='#' onClick={event => loadSS(event, storyItem)} className='underline font-SS-content'>{storyItem.Title}</a></li>
         })}
       </ul>
     </div>
