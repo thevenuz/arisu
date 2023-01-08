@@ -6,6 +6,7 @@ import Gallery from './pages/Gallery';
 import ShortStories from './pages/ShortStories';
 import ShortStoryContent from './components/ShortStories/ShortStoryContent';
 import Fanfics from './pages/Fanfics';
+import About from './pages/About';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/shortstories" element={<ShortStories/>}/>
         <Route path="/ss/:name" element={<ShortStoryContent/>}/>
         <Route path="/fanfics" element={<Fanfics/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
       <Footer/>
     </div>

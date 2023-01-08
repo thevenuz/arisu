@@ -20,8 +20,6 @@ const ShortStoryContent = () => {
   const { name } = useParams();
   const {state } = useLocation();
 
-  console.log(state)
-
   useEffect(()=> {
       fetch(ss[state.FileName])
           .then((res) => res.text())

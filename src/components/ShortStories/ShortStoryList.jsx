@@ -1,6 +1,5 @@
 import React from 'react';
 import ShortStories from '../../assets/data/shortstories/ShortStoriesList.json';
-import ShortStoryContent from './ShortStoryContent';
 import ShortStoryListItem from './ShortStoryListItem';
 
 const ShortStoryList = () => {

@@ -41,10 +41,14 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className='align-middle'>
-                        <p>Fanfics</p>
+                        <Link to="/fanfics" className="">
+                            <p>Fanfics</p>
+                        </Link>
                     </div>
                     <div className='align-middle'>
-                        <p>About</p>
+                        <Link to="/about" className="">
+                            <p>About</p>
+                        </Link>
                     </div>
                     <div className='align-middle'>
                         <p>Theme</p>
