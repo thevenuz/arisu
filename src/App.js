@@ -10,18 +10,23 @@ import About from './pages/About';
 
 function App() {
   return (
-    <div className="App bg-main-bg">
-      <Navbar/>
-      <Routes>
+    <div className="App flex flex-col h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient-from via-gradient-to to-gradient-from">
+    
+    <Navbar/>
+    
+    <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/shortstories" element={<ShortStories/>}/>
         <Route path="/ss/:name" element={<ShortStoryContent/>}/>
         <Route path="/fanfics" element={<Fanfics/>}/>
         <Route path="/about" element={<About/>}/>
-      </Routes>
-      <Footer/>
+    </Routes>
+    
+    <Footer/>
     </div>
+    
+    
   );
 }
 

@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex w-full h-16 font-Heading shadow-md'>
+    <div className='flex w-full h-16 font-Heading shadow-md sticky top-0'>
         <div className='flex w-4/5 mx-auto justify-center'>
             {/* div for icon and title */}
             <div className='flex items-center w-2/12 space-x-1 '>
@@ -34,27 +34,27 @@ const Navbar = () => {
             <div className='flex-1 items-center justify-end align-middle flex'>
                 <div className='flex space-x-4 align-middle px-2 text-base font-Heading font-bold text-main-text'>
                     <div className='align-middle'>
-                        <Link to="/" className={`align-middle ${activePage===PAGES.HOME ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ' '}`}  onClick={() => setCurrentPage(PAGES.HOME)}>
+                        <Link to="/" className={`align-middle underline-hover relative ${activePage===PAGES.HOME ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ' '}`}  onClick={() => setCurrentPage(PAGES.HOME)}>
                             <p>Home</p>
                         </Link>
                     </div>
                     <div className='align-middle'>
-                        <Link to="/gallery" className={`align-middle ${activePage===PAGES.GALLERY ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.GALLERY)}>
+                        <Link to="/gallery" className={`align-middle underline-hover relative ${activePage===PAGES.GALLERY ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.GALLERY)}>
                             <p>Gallery</p>
                         </Link>
                     </div>
                     <div className='align-middle'>
-                        <Link to="/shortstories" className={`hover:text-accent ${activePage===PAGES.SHORTSTORIES ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.SHORTSTORIES)}>
+                        <Link to="/shortstories" className={`align-middle underline-hover relative ${activePage===PAGES.SHORTSTORIES ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.SHORTSTORIES)}>
                             <p>Short Stories</p>
                         </Link>
                     </div>
                     <div className='align-middle'>
-                        <Link to="/fanfics" className={`hover:text-accent ${activePage===PAGES.FANFICS ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.FANFICS)}>
+                        <Link to="/fanfics" className={`align-middle underline-hover relative ${activePage===PAGES.FANFICS ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.FANFICS)}>
                             <p>Fanfics</p>
                         </Link>
                     </div>
                     <div className='align-middle'>
-                        <Link to="/about" className={`hover:text-accent ${activePage===PAGES.ABOUT ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.ABOUT)}>
+                        <Link to="/about" className={`align-middle underline-hover relative ${activePage===PAGES.ABOUT ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ''}`} onClick={() => setCurrentPage(PAGES.ABOUT)}>
                             <p>About</p>
                         </Link>
                     </div>
