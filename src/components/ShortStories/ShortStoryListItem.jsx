@@ -8,13 +8,12 @@ const ShortStoryListItem = ({story}) => {
 
     const loadSS = (event, story) => {
         event.preventDefault();
-        console.log(story.Title)
         navigate(`/ss/${story.Title}`, {state: story});
     }
 
   return (
     <div className='p-2'>
-      <p className='font-semibold font-Outfit list-disc'>{story.Volume}</p>
+      <p className='font-semibold font-Heading list-disc'>{story.Volume}</p>
       <ul className='list-disc'>
         {story.Stories.map((storyItem) => {
            return <li className='ml-10'><a href='#' onClick={event => loadSS(event, storyItem)} className='underline font-SS-content'>{storyItem.Title}</a></li>

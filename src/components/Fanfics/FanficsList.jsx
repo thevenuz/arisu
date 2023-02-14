@@ -4,7 +4,7 @@ import FanficItem from './FanficItem';
 
 const FanficsList = () => {
   return (
-    <div className='p-4 w-5/6 mx-auto font-SS-content'>
+    <div className='flex-1 p-4 w-5/6 mx-auto font-SS-content min-h-screen'>
         <ul>
             {fanfics.map((fic) => {
                 return <li className='my-2'><FanficItem fic={fic}/></li> 

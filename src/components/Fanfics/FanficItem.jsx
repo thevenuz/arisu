@@ -11,7 +11,7 @@ const FanficItem = ({fic}) => {
 
   return (
     <div className='py-2'>
-        <p className='font-medium font-Outfit'>{fic.Story}</p>
+        <p className='font-medium font-Heading'>{fic.Story}</p>
         <ul>
             {
                 fic.Chapters.map((chapter) => {
