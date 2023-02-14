@@ -13,7 +13,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex w-full h-16 font-Heading shadow-md sticky top-0'>
+    <div className='flex w-full h-32 font-Heading shadow-md sticky top-0'>
         <div className='flex w-4/5 mx-auto justify-center'>
             {/* div for icon and title */}
             <div className='flex items-center w-2/12 space-x-1 '>
