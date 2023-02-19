@@ -1,27 +1,66 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link} from "react-router-dom";
 import icon from '../assets/images/icon.png'
 import { PAGES } from '../enums/Pages';
+import DarkModeToggle from 'react-dark-mode-toggle';
 
-const Navbar = () => {
+const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
   // State for the active tab
-  const [activePage, setActivePage] = useState(PAGES.HOME)
+  const [activePage, setActivePage] = useState(PAGES.HOME);
+
+  const [page] = useState(window.location.pathname ?? 'home');
+
+  useEffect(() => {
+    const re = /\/(\w*)/g
+    const matchedPage = re.exec(page);
+    if(matchedPage && matchedPage[1]){
+        console.log(`page matched: ${matchedPage[1]}`)
+        switch(matchedPage[1]){
+            case 'home':
+                setCurrentPage(PAGES.HOME);
+                break;
+            case 'gallery':
+                setCurrentPage(PAGES.GALLERY);
+                break;
+            case 'shortstories':
+            case 'ss':
+                setCurrentPage(PAGES.SHORTSTORIES);
+                break;
+            case 'fanfics':
+                setCurrentPage(PAGES.FANFICS);
+                break;
+            case 'about':
+                setCurrentPage(PAGES.ABOUT);
+                break;
+            default:
+                setCurrentPage(PAGES.HOME);
+                break;
+        }
+    }
+    else{
+        setCurrentPage(PAGES.HOME);
+    }
+  }, [])
+  
 
   const setCurrentPage = (page) => {
     setActivePage(page);
   }
 
+
   return (
-    <div className='flex w-full h-32 font-Heading shadow-md sticky top-0'>
+    <div className='flex w-full h-32 max-h-[72px] min-h-[72px] font-Heading shadow-md sticky top-0'>
         <div className='flex w-4/5 mx-auto justify-center'>
             {/* div for icon and title */}
             <div className='flex items-center w-2/12 space-x-1 '>
                 <div className='align-middle w-1/3 px-2'>
-                    <img className='w-14 h-14 rounded-full' src={icon} alt='icon'/>
+                    <Link to='/'>
+                        <img className='w-14 h-14 rounded-full' src={icon} alt='icon'/>
+                    </Link>
                 </div>
                 <div className='align-middle font-bold text-xl leading-tight text-main-text'>
-                    <Link to="/">
+                    <Link to='/'>
                     <p className='font-Heading'>
                         ARISU-CAMP
                     </p>
@@ -58,8 +97,9 @@ const Navbar = () => {
                             <p>About</p>
                         </Link>
                     </div>
-                    <div className='align-middle'>
-                        <p>Theme</p>
+                    <div className='align-middle flex items-center'>
+                        {/* <p>Theme</p> */}
+                        <DarkModeToggle className='align-middle' size={40} onChange={setIsDarkMode} checked={isDarkMode}/>
                     </div>
                 </div>
             </div>
