@@ -5,7 +5,7 @@ import Switcher from '../components/Gallery/Switcher';
 import { IMAGETYPES } from '../enums/ImageType';
 import {useSearchParams} from 'react-router-dom';
 
-const Gallery = () => {
+const Gallery = ({isDarkMode = false}) => {
 
   // State
   const [activeTab, setActiveTab] = useState(IMAGETYPES.LNIllustrations);
@@ -39,7 +39,7 @@ const Gallery = () => {
     <div className='flex container w-full overflow-y-hidden'>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
         <div className='w-4/5 mx-auto flex-col overflow-y-auto no-scrollbar'>
-            <Switcher activeTab = {activeTab} setActiveTab= {setActiveTab} setUrlParams={setUrlParams}/>
+            <Switcher activeTab = {activeTab} setActiveTab= {setActiveTab} setUrlParams={setUrlParams} isDarkMode = {isDarkMode}/>
             <Images activeTab = {activeTab}/>
             <Footer/> 
         </div>  

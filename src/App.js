@@ -7,19 +7,33 @@ import ShortStoryContent from './components/ShortStories/ShortStoryContent';
 import Fanfics from './pages/Fanfics';
 import About from './pages/About';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 function App() {
 
-  const [isDarkMode, setIsDarkMode] = useState(()=>false);
+  const [isDarkMode, setIsDarkMode] = useState(()=>{
+    const darkModeFromStorage = localStorage.getItem('DarkMode');
+
+    return darkModeFromStorage !== null ? JSON.parse(darkModeFromStorage) : false;
+});
+
+  // Save Dark Mode/Light Mode in local storage
+
+  useEffect(() => {
+    localStorage.setItem('DarkMode', JSON.stringify(isDarkMode));
+  }, [isDarkMode])
 
   return (
-    <div className="App flex flex-col h-screen bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient-from via-gradient-to to-gradient-from">
+    <div className={`App flex flex-col h-screen 
+      ${isDarkMode ? 'bg-main-text text-slate-50' : 
+      'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient-from via-gradient-to to-gradient-from' }
+    `}>
     
     <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
     
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/gallery" element={<Gallery/>} />
+        <Route path="/gallery" element={<Gallery isDarkMode={isDarkMode}/>} />
         <Route path="/shortstories" element={<ShortStories/>}/>
         <Route path="/ss/:name" element={<ShortStoryContent/>}/>
         <Route path="/fanfics" element={<Fanfics/>}/>

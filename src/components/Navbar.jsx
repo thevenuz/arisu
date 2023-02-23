@@ -51,7 +51,8 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
   return (
     <div className='flex w-full h-32 max-h-[72px] min-h-[72px] font-Heading shadow-md sticky top-0'>
-        <div className='flex w-4/5 mx-auto justify-center'>
+        <div className={`flex w-4/5 mx-auto justify-center 
+        ${isDarkMode ? ' text-slate-50' : 'text-main-text'}`}>
             {/* div for icon and title */}
             <div className='flex items-center w-2/12 space-x-1 '>
                 <div className='align-middle w-1/3 px-2'>
@@ -59,7 +60,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
                         <img className='w-14 h-14 rounded-full' src={icon} alt='icon'/>
                     </Link>
                 </div>
-                <div className='align-middle font-bold text-xl leading-tight text-main-text'>
+                <div className='align-middle font-bold text-xl leading-tight '>
                     <Link to='/'>
                     <p className='font-Heading'>
                         ARISU-CAMP
@@ -71,7 +72,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
 
             {/* div for about, gallery ss etc */}
             <div className='flex-1 items-center justify-end align-middle flex'>
-                <div className='flex space-x-4 align-middle px-2 text-base font-Heading font-bold text-main-text'>
+                <div className='flex space-x-4 align-middle px-2 text-base font-Heading font-bold '>
                     <div className='align-middle'>
                         <Link to="/" className={`align-middle underline-hover relative ${activePage===PAGES.HOME ? 'underline underline-offset-8 decoration-3 decoration-accent-bar' : ' '}`}  onClick={() => setCurrentPage(PAGES.HOME)}>
                             <p>Home</p>
