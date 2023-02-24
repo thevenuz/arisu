@@ -4,8 +4,11 @@ import Images from '../components/Gallery/Images';
 import Switcher from '../components/Gallery/Switcher';
 import { IMAGETYPES } from '../enums/ImageType';
 import {useSearchParams} from 'react-router-dom';
+import { PAGES } from '../enums/Pages';
 
-const Gallery = ({isDarkMode = false}) => {
+const Gallery = ({isDarkMode = false, setActivePage}) => {
+
+  setActivePage(PAGES.GALLERY);
 
   // State
   const [activeTab, setActiveTab] = useState(IMAGETYPES.LNIllustrations);

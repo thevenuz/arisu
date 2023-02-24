@@ -1,8 +1,12 @@
 import React, {useState, useEffect} from 'react';
 import { useLocation, useParams } from "react-router-dom";
 import Markdown from 'markdown-to-jsx';
+import Footer from '../Footer';
+import { PAGES } from '../../enums/Pages';
 
-const ShortStoryContent = () => {
+const ShortStoryContent = ({setActivePage}) => {
+
+  setActivePage(PAGES.HOME);
 
   // State for markdown content
   const [ content, setContent] = useState({md: ""});
@@ -29,8 +33,9 @@ const ShortStoryContent = () => {
   }, [])
 
   return (
-    <div className='flex container  w-full h-full'>
-      <div className='w-4/5 mx-auto p-6'>
+    <div className='flex container  w-full overflow-y-hidden'>
+      <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
+      <div className='w-4/5 mx-auto p-6 overflow-y-auto no-scrollbar'>
         <div className='w-5/6 mx-auto shadow-md'>
           {/* SS info  */}
           <div className='items-center justify-center text-center mt-4'>
@@ -41,7 +46,11 @@ const ShortStoryContent = () => {
             <Markdown children={content.md}/>
           </div>
         </div>
+        <div>
+        <Footer/>
       </div>
+      </div>
+    </div>
     </div>
   )
 }

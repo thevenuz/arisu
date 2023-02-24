@@ -4,10 +4,9 @@ import icon from '../assets/images/icon.png'
 import { PAGES } from '../enums/Pages';
 import DarkModeToggle from 'react-dark-mode-toggle';
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
+const Navbar = ({isDarkMode, setIsDarkMode, activePage = PAGES.HOME, setActivePage}) => {
 
-  // State for the active tab
-  const [activePage, setActivePage] = useState(PAGES.HOME);
+  // State
 
   const [page] = useState(window.location.pathname ?? 'home');
 

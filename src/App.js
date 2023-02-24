@@ -8,8 +8,11 @@ import Fanfics from './pages/Fanfics';
 import About from './pages/About';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { PAGES } from './enums/Pages';
 
 function App() {
+
+  const [activePage, setActivePage] = useState(PAGES.HOME);
 
   const [isDarkMode, setIsDarkMode] = useState(()=>{
     const darkModeFromStorage = localStorage.getItem('DarkMode');
@@ -29,15 +32,15 @@ function App() {
       'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient-from via-gradient-to to-gradient-from' }
     `}>
     
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} activePage={activePage} setActivePage={setActivePage}/>
     
     <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/gallery" element={<Gallery isDarkMode={isDarkMode}/>} />
-        <Route path="/shortstories" element={<ShortStories/>}/>
-        <Route path="/ss/:name" element={<ShortStoryContent/>}/>
-        <Route path="/fanfics" element={<Fanfics/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/" element={<Home setActivePage={setActivePage}/>}/>
+        <Route path="/gallery" element={<Gallery isDarkMode={isDarkMode} setActivePage={setActivePage}/>} />
+        <Route path="/shortstories" element={<ShortStories setActivePage={setActivePage}/>}/>
+        <Route path="/ss/:name" element={<ShortStoryContent setActivePage={setActivePage}/>}/>
+        <Route path="/fanfics" element={<Fanfics setActivePage={setActivePage}/>}/>
+        <Route path="/about" element={<About setActivePage={setActivePage}/>}/>
     </Routes>
     
     </div>
