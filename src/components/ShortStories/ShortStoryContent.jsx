@@ -6,7 +6,7 @@ import { PAGES } from '../../enums/Pages';
 
 const ShortStoryContent = ({setActivePage}) => {
 
-  setActivePage(PAGES.HOME);
+  setActivePage(PAGES.SHORTSTORIES);
 
   // State for markdown content
   const [ content, setContent] = useState({md: ""});
@@ -33,7 +33,7 @@ const ShortStoryContent = ({setActivePage}) => {
   }, [])
 
   return (
-    <div className='flex container  w-full overflow-y-hidden'>
+    <div className='flex  w-full overflow-y-hidden'>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
       <div className='w-4/5 mx-auto p-6 overflow-y-auto no-scrollbar'>
         <div className='w-5/6 mx-auto shadow-md'>

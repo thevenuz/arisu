@@ -4,19 +4,19 @@ const FanficItem = ({fic}) => {
 
     const authorData = (ficData) => {
         if (ficData.AuthorLink) {
-            return <a className='underline underline-offset-3 italic' href={ficData.AuthorLink} target='_blank'>{ficData.Author}</a>
+            return <a className='underline underline-offset-3 italic hover:decoration-accent-bar hover:font-semibold' href={ficData.AuthorLink} target='_blank'>{ficData.Author}</a>
         }
         return <span className='italic'>{ficData.Author}</span>
     }
 
   return (
     <div className='py-2'>
-        <p className='font-medium font-Heading'>{fic.Story}</p>
+        <p className='font-semibold font-Heading'>{fic.Story}</p>
         <ul>
             {
                 fic.Chapters.map((chapter) => {
                     return <li className='list-disc ml-8 my-2'>
-                        <p><a className='underline underline-offset-3' href={chapter.Source} target='_blank'>{chapter.Title}</a> - by {authorData(fic)} on {fic.From}</p>
+                        <p><a className='underline underline-offset-3 hover:decoration-accent-bar hover:font-semibold' href={chapter.Source} target='_blank'>{chapter.Title}</a> - by {authorData(fic)} on {fic.From}</p>
                     </li>
                 })
             }

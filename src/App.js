@@ -18,7 +18,7 @@ function App() {
     const darkModeFromStorage = localStorage.getItem('DarkMode');
 
     return darkModeFromStorage !== null ? JSON.parse(darkModeFromStorage) : false;
-});
+  });
 
   // Save Dark Mode/Light Mode in local storage
 

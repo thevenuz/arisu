@@ -10,7 +10,7 @@ const Home = ({setActivePage}) => {
   setActivePage(PAGES.HOME);
   
   return (
-    <div className='flex container w-full overflow-y-hidden'>
+    <div className='flex w-full overflow-y-hidden'>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
         <div className='flex-col w-4/5 mx-auto overflow-y-auto no-scrollbar'>
               <Welcome/>

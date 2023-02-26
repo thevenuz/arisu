@@ -8,7 +8,7 @@ const About = ({setActivePage}) => {
   setActivePage(PAGES.ABOUT);
 
   return (
-    <div className='flex container w-full h-screen overflow-y-hidden'>
+    <div className='flex w-full h-screen overflow-y-hidden'>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
       <div className='w-4/5 mx-auto overflow-y-auto no-scrollbar'>
         <AboutContent/>

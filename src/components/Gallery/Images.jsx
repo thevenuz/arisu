@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import imagess from '../../assets/data/images/Images.json';
 import LNIllustrations from '../../assets/data/images/LNIllustrations.json';
 import OfficialArt from '../../assets/data/images/OfficialArt.json';
 import Fanart from '../../assets/data/images/Fanart.json';
-import AIArt from '../../assets/data/images/Comics.json';
+import AIArt from '../../assets/data/images/AIArt.json';
 import ImageCard from './ImageCard';
 import { IMAGETYPES } from '../../enums/ImageType';
 
@@ -16,13 +15,16 @@ const Images = ({activeTab}) => {
       return LNIllustrations;
     }
     else if (activeTab === IMAGETYPES.OfficialArt) {
-      return OfficialArt;
+      const latestOfficialArt = [...OfficialArt].reverse();
+      return latestOfficialArt;
     }
     else if (activeTab === IMAGETYPES.Fanart) {
-      return Fanart;
+      const latestFanArt = [...Fanart].reverse();
+      return latestFanArt;
     }
     else if (activeTab === IMAGETYPES.AIArt) {
-      return AIArt;
+      const latestAIArt = [...AIArt].reverse();
+      return latestAIArt;
     }
 
     return LNIllustrations;
