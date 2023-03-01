@@ -1,0 +1,2 @@
+Arisu Sakayanagi, the leader of Class-A, is one of the prominent characters in the light novel series 'Classroom of the Elite'.
+Despite her petite stature, Arisu has a striking appearance with her lilac-colored hair and violet eyes. She walks with a cane due to her disability, but this does not hinder her high level of intelligence. Fans of the series often refer to Arisu as Princess, Queen, or sometimes Smug Loli. Arisu holds a significant role in the series as one of the few characters who possesses knowledge about the past of the main character, Kiyotaka Ayanokouji.
