@@ -1,0 +1,124 @@
+[
+    {
+        "Volume": "Volume 6",
+        "Stories": [
+            {
+                "Title":"Behind the Scenes of the End of Term Exams",
+                "FileName": "vol6_behind_the_scenes",
+                "Link":"./data/shortstories/vol6_behind_the_scenes.md",
+                "Source":"https://youzitsu.surge.sh/6/ss4",
+                "Info": ""
+            }
+        ]
+    },
+    {
+        "Volume": "Volume 8",
+        "Stories": [
+            {
+                "Title":"The True Meaning Is",
+                "FileName":"vol8_the_true_meaning_is",
+                "Link":"./data/shortstories/vol8_the_true_meaning_is.md",
+                "Source":"https://youzitsu.surge.sh/8/ss2",
+                "Info": ""
+            },
+            {
+                "Title":"That Summer Day",
+                "FileName":"vol8_that_summer_day",
+                "Link":"./data/shortstories/vol8_that_summer_day.md",
+                "Source":"https://youzitsu.surge.sh/8/ss5",
+                "Info": ""
+            }
+        ]
+    },
+    {
+        "Volume": "Volume 9",
+        "Stories": [
+            {
+                "Title":"Sakayanagi's Preparations",
+                "FileName":"vol9_sakayanagis_preperations",
+                "Link":"./data/shortstories/vol9_sakayanagis_preperations.md",
+                "Source":"https://youzitsu.surge.sh/9/ss5",
+                "Info": ""
+            }
+        ]
+    },
+    {
+        "Volume": "Volume 10",
+        "Stories": [
+            {
+                "Title":"Sakayanagi's Strategy",
+                "FileName":"vol10_sakayanagis_strategy",
+                "Link":"./data/shortstories/vol10_sakayanagis_strategy.md",
+                "Source":"https://youzitsu.surge.sh/10/ss3",
+                "Info": ""
+            }
+        ]
+    },
+    {
+        "Volume": "Volume 11",
+        "Stories": [
+            {
+                "Title":"The Time of Realisation",
+                "FileName":"vol11_the_time_of_realisation",
+                "Link":"./data/shortstories/vol11_the_time_of_realisation.md",
+                "Source":"https://youzitsu.surge.sh/11/ss3",
+                "Info":""
+            },
+            {
+                "Title":"The Morning of Fulfilment",
+                "FileName":"vol11_the_morning_of_fulfillment",
+                "Link":"./data/shortstories/vol11_the_morning_of_fulfillment.md",
+                "Source":"https://youzitsu.surge.sh/11/ss1",
+                "Info":""
+            }
+        ]
+    },
+    {
+        "Volume": "Volume 11.5",
+        "Stories": [
+            {
+                "Title":"A Prediction of the Future",
+                "FileName":"vol115_prediction_of_the_future",
+                "Link":"./data/shortstories/vol115_prediction_of_the_future.md",
+                "Source":"https://youzitsu.surge.sh/115/ss4",
+                "Info":""
+            }
+        ]
+    },
+    {
+        "Volume": "Year 2, Volume 3",
+        "Stories": [
+            {
+                "Title":"An Enjoyable Moment",
+                "FileName":"y2v3_an_enjoyable_moment",
+                "Link":"./data/shortstories/y2v3_an_enjoyable_moment.md",
+                "Source":"https://cinnamontranslations.wordpress.com/2020/10/24/youjitsu-2nd-year-v3-sakayanagi-arisu-ss-an-enjoyable-moment/",
+                "Info":"From Cinnamon Translation"
+            }
+        ]
+    },
+    {
+        "Volume": "Year 2, Volume 4.5",
+        "Stories": [
+            {
+                "Title":"Sakayanagi's Unexpected Assessment",
+                "FileName":"y2v45_unexpected_assesment",
+                "Link":"./data/shortstories/y2v45_unexpected_assesment.md",
+                "Source":"https://cinnamontranslations.wordpress.com/2021/07/27/youjitsu-2nd-year-v4-5-sakayanagi-arisu-ss-sakayanagis-unexpected-assessment/",
+                "Info":"From Cinnamon Translation"
+            }
+        ]
+    },
+    {
+        "Volume": "Year 2, Volume 6",
+        "Stories": [
+            {
+                "Title":"Complicated Feelings",
+                "FileName":"y2v6_complicated_feelings",
+                "Link":"./data/shortstories/y2v6_complicated_feelings.md",
+                "Source":"https://cinnamontranslations.wordpress.com/2022/02/28/youjitsu-2nd-year-v6-sakayanagi-arisu-ss-complicated-feelings/",
+                "Info": "From Cinnamon Translation"
+            }
+        ]
+    }
+]
