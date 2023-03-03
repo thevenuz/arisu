@@ -1,5 +1,5 @@
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
+import Navbar from './components/Shared/Navbar';
 import {Route, Routes} from 'react-router-dom';
 import Gallery from './pages/Gallery';
 import ShortStories from './pages/ShortStories';

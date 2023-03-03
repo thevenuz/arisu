@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
-import fanfics from '../../assets/data/fanfics/fanfics.json';
-import ShortStories from '../../assets/data/shortstories/ShortStoriesList.json';
+import fanfics from '../../data/assets/fanfics/fanfics.json';
+import ShortStories from '../../data/assets/shortstories/ShortStoriesList.json';
 import { Link} from "react-router-dom";
 import { Route, useNavigate } from "react-router-dom";
 

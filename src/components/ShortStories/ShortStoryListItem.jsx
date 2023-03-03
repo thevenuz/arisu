@@ -16,7 +16,7 @@ const ShortStoryListItem = ({story}) => {
       <p className='font-semibold font-Heading list-disc'>{story.Volume}</p>
       <ul className='list-disc'>
         {story.Stories.map((storyItem) => {
-           return <li className='ml-10'><a href='#' onClick={event => loadSS(event, storyItem)} className='underline font-SS-content underline-offset-3 decoration-3 hover:decoration-accent-bar'>{storyItem.Title}</a></li>
+           return <li className='ml-10'><a href='#' onClick={event => loadSS(event, storyItem)} className='underline font-Content underline-offset-3 decoration-3 hover:decoration-accent-bar'>{storyItem.Title}</a></li>
         })}
       </ul>
     </div>

@@ -5,8 +5,8 @@ const ImageCard = ({image}) => {
   return (
     <div className=' break-inside-avoid'>
         <figure className='mb-1 p-1 hover:p-0'>
-          {/* <img className='rounded-t-md' src={image.ImagePath} alt={image.Title} loading='lazy'/> */}
-          <LazyLoadImage className='rounded-t-md' src={image.ImagePath} alt={image.Title} loading='lazy'/>
+          <img className='rounded-t-md' src={image.ImagePath} alt={image.Title} loading='lazy'/>
+          {/* <LazyLoadImage className='rounded-t-md' src={image.ImagePath} alt={image.Title} loading='lazy'/> */}
           <figcaption className=' shadow-lg rounded-b-md p-1 w-full font-Content'>
             <p className='px-1 text-base drop-shadow-md'>
               <span className='font-bold'>{image.Title}</span>

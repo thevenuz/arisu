@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import LNIllustrations from '../../assets/data/images/LNIllustrations.json';
-import OfficialArt from '../../assets/data/images/OfficialArt.json';
-import Fanart from '../../assets/data/images/Fanart.json';
-import AIArt from '../../assets/data/images/AIArt.json';
+import LNIllustrations from '../../data/assets/images/LNIllustrations.json';
+import OfficialArt from '../../data/assets/images/OfficialArt.json';
+import Fanart from '../../data/assets/images/Fanart.json';
+import AIArt from '../../data/assets/images/AIArt.json';
 import ImageCard from './ImageCard';
 import { IMAGETYPES } from '../../enums/ImageType';
 
