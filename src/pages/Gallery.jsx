@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Footer from '../components/Footer';
+import Footer from '../components/Shared/Footer';
 import Images from '../components/Gallery/Images';
 import Switcher from '../components/Gallery/Switcher';
 import { IMAGETYPES } from '../enums/ImageType';

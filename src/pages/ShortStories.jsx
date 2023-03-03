@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import Footer from '../components/Shared/Footer';
 import ShortStoryList from '../components/ShortStories/ShortStoryList';
 import { PAGES } from '../enums/Pages';
 

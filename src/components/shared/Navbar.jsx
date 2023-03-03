@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link} from "react-router-dom";
-import icon from '../assets/images/icon.png'
-import { PAGES } from '../enums/Pages';
+import {PAGES} from '../../enums/Pages';
 import DarkModeToggle from 'react-dark-mode-toggle';
 
 const Navbar = ({isDarkMode, setIsDarkMode, activePage = PAGES.HOME, setActivePage}) => {
@@ -55,7 +54,7 @@ const Navbar = ({isDarkMode, setIsDarkMode, activePage = PAGES.HOME, setActivePa
             <div className='flex items-center w-2/12 space-x-1 '>
                 <div className='align-middle w-1/3 px-2'>
                     <Link to='/'>
-                        <img className='w-14 h-14 rounded-full' src={icon} alt='icon'/>
+                        <img className='w-14 h-14 rounded-full' src='/images/Assets/icon.png' alt='icon'/>
                     </Link>
                 </div>
                 <div className='align-middle font-bold text-xl leading-tight'>

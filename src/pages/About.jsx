@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutContent from '../components/About/AboutContent';
-import Footer from '../components/Footer';
+import Footer from '../components/Shared/Footer';
 import { PAGES } from '../enums/Pages';
 
 const About = ({setActivePage}) => {

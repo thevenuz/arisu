@@ -2,7 +2,7 @@ import React from 'react';
 import LandingPageImage from '../components/Home/LandingPageImage';
 import Welcome from '../components/Home/Welcome';
 import RecentsSection from '../components/Home/RecentsSection';
-import Footer from '../components/Footer';
+import Footer from '../components/Shared/Footer';
 import { PAGES } from '../enums/Pages';
 
 const Home = ({setActivePage}) => {
