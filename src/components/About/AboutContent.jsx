@@ -47,8 +47,12 @@ const AboutContent = () => {
         <div className='px-2 py-4'>
           <p className='text-2xl font-bold underline underline-offset-8'>JOIN US</p>
           <div className='flex space-x-4'>
-          <a href='https://www.reddit.com/r/ClassroomOfTheElite' target='_blank'><img className='mt-10 w-16 h-16' src='/images/Assets/reddit.png' alt='reddit-icon'/></a>
-          <a href='https://discord.com/invite/R38FNs6' target='_blank'><img className='mt-10 w-16 h-16' src='/images/Assets/discord.png' alt='discord-icon'/></a>
+          <a href='https://www.reddit.com/r/ClassroomOfTheElite' target='_blank' title='Join Classroom of the Elite subreddit'>
+            <img className='mt-10 w-16 h-16' src='/images/Assets/reddit.png' alt='reddit-icon'/>
+          </a>
+          <a href='https://discord.com/invite/R38FNs6' target='_blank' title='Join You-Zitsu discord server'>
+            <img className='mt-10 w-16 h-16' src='/images/Assets/discord.png' alt='discord-icon'/>
+          </a>
           </div>
           
         </div>
