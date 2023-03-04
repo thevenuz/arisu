@@ -13,7 +13,7 @@ import { PAGES } from './enums/Pages';
 function App() {
 
   const [activePage, setActivePage] = useState(PAGES.HOME);
-
+  const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(() => false);
   const [isDarkMode, setIsDarkMode] = useState(()=>{
     const darkModeFromStorage = localStorage.getItem('DarkMode');
 
@@ -32,15 +32,16 @@ function App() {
       'bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gradient-from via-gradient-to to-gradient-from' }
     `}>
     
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} activePage={activePage} setActivePage={setActivePage}/>
+    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} activePage={activePage} setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}
+    setIsMobileNavbarOpen={setIsMobileNavbarOpen} />
     
     <Routes>
-        <Route path="/" element={<Home setActivePage={setActivePage}/>}/>
-        <Route path="/gallery" element={<Gallery isDarkMode={isDarkMode} setActivePage={setActivePage}/>} />
-        <Route path="/shortstories" element={<ShortStories setActivePage={setActivePage}/>}/>
-        <Route path="/ss/:name" element={<ShortStoryContent setActivePage={setActivePage}/>}/>
-        <Route path="/fanfics" element={<Fanfics setActivePage={setActivePage}/>}/>
-        <Route path="/about" element={<About setActivePage={setActivePage}/>}/>
+        <Route path="/" element={<Home setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>}/>
+        <Route path="/gallery" element={<Gallery isDarkMode={isDarkMode} setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>} />
+        <Route path="/shortstories" element={<ShortStories setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>}/>
+        <Route path="/ss/:name" element={<ShortStoryContent setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>}/>
+        <Route path="/fanfics" element={<Fanfics setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>}/>
+        <Route path="/about" element={<About setActivePage={setActivePage} isMobileNavbarOpen={isMobileNavbarOpen}/>}/>
     </Routes>
     
     </div>

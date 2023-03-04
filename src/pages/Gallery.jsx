@@ -6,7 +6,7 @@ import { IMAGETYPES } from '../enums/ImageType';
 import {useSearchParams} from 'react-router-dom';
 import { PAGES } from '../enums/Pages';
 
-const Gallery = ({isDarkMode = false, setActivePage}) => {
+const Gallery = ({isDarkMode = false, setActivePage, isMobileNavbarOpen = false}) => {
 
   setActivePage(PAGES.GALLERY);
 
@@ -39,7 +39,7 @@ const Gallery = ({isDarkMode = false, setActivePage}) => {
   }, []);
 
   return (
-    <div className='flex w-full overflow-y-hidden'>
+    <div className={`flex w-full overflow-y-hidden ${isMobileNavbarOpen ? 'hidden' : ''}`}>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
         <div className='w-4/5 mx-auto flex-col overflow-y-auto no-scrollbar'>
             <Switcher activeTab = {activeTab} setActiveTab= {setActiveTab} setUrlParams={setUrlParams} isDarkMode = {isDarkMode}/>

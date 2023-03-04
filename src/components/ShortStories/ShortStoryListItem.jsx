@@ -1,6 +1,5 @@
 import React from 'react';
-import ShortStoryContent from './ShortStoryContent';
-import { Route, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const ShortStoryListItem = ({story}) => {
 

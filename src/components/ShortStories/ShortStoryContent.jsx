@@ -1,18 +1,17 @@
 import React, {useState, useEffect} from 'react';
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation} from "react-router-dom";
 import Markdown from 'markdown-to-jsx';
 import Footer from '../Shared/Footer';
 import { PAGES } from '../../enums/Pages';
 
-const ShortStoryContent = ({setActivePage}) => {
+const ShortStoryContent = ({setActivePage, isMobileNavbarOpen = false}) => {
 
   setActivePage(PAGES.SHORTSTORIES);
 
   // State for markdown content
   const [ content, setContent] = useState({md: ""});
 
-  // Name and state of the ss from navigation
-  const { name } = useParams();
+  // State of the ss from navigation
   const {state } = useLocation();
   
   // Load all markdown files
@@ -33,7 +32,7 @@ const ShortStoryContent = ({setActivePage}) => {
   }, [])
 
   return (
-    <div className='flex  w-full overflow-y-hidden'>
+    <div className={`flex  w-full overflow-y-hidden ${isMobileNavbarOpen ? 'hidden' : ''}`}>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
       <div className='w-4/5 mx-auto p-6 overflow-y-auto no-scrollbar'>
         <div className='w-5/6 mx-auto shadow-md'>

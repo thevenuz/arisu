@@ -5,12 +5,12 @@ import RecentsSection from '../components/Home/RecentsSection';
 import Footer from '../components/Shared/Footer';
 import { PAGES } from '../enums/Pages';
 
-const Home = ({setActivePage}) => {
+const Home = ({setActivePage, isMobileNavbarOpen = false}) => {
 
   setActivePage(PAGES.HOME);
   
   return (
-    <div className='flex w-full overflow-y-hidden'>
+    <div className={`flex w-full overflow-y-hidden ${isMobileNavbarOpen ? 'hidden' : ''}`}>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
         <div className='flex-col w-4/5 mx-auto overflow-y-auto no-scrollbar'>
               <Welcome/>
