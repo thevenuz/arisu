@@ -25,7 +25,7 @@ const HamburgerMenu = ({ isMobileNavbarOpen = false, setIsMobileNavbarOpen}) => 
           <Link to='/gallery' onClick={()=>setIsMobileNavbarOpen((prev) => !prev)}>
               <p>Gallery</p>
           </Link>
-          <Link to='/shortstorie' onClick={()=>setIsMobileNavbarOpen((prev) => !prev)}>
+          <Link to='/shortstories' onClick={()=>setIsMobileNavbarOpen((prev) => !prev)}>
               <p>Short Stories</p>
           </Link>
           <Link to='/fanfics' onClick={()=>setIsMobileNavbarOpen((prev) => !prev)}>
