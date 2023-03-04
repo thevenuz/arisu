@@ -11,7 +11,7 @@ const Switcher = ({activeTab, setActiveTab, setUrlParams, isDarkMode = false}) =
   return (
     // This is to switch between different image sources
     <div className='flex w-full items-center align-middle my-6 font-Heading'>
-        <div className={`w-1/3 h-10 rounded-lg flex mx-auto shadow-md font-bold ${isDarkMode ? 'border-[1px] border-[#131c45]' : 'border-[1px] border-main-bg'}`}>
+        <div className={`w-4/5 md:w-1/3 text-sm md:text-base h-10 rounded-lg flex mx-auto shadow-md font-bold ${isDarkMode ? 'border-[1px] border-[#131c45]' : 'border-[1px] border-main-bg'}`}>
             {/* Different Image sources */}
             <div className={`flex-auto flex justify-center align-middle items-center cursor-pointer ${isDarkMode ? ' shadow-[#131c45] shadow-md' : 'shadow-md'}   ${activeTab === IMAGETYPES.LNIllustrations ? isDarkMode ? ' bg-main-bg rounded-lg' : ' bg-accent-bar rounded-lg' : ''}`} onClick={() => {
               setCurrentTab(IMAGETYPES.LNIllustrations);
