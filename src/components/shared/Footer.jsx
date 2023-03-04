@@ -10,10 +10,10 @@ const Footer = () => {
       <div className="flex-col flex w-4/12 space-x-1">
         <div className="align-middle px-2">
           <Link to='/'>
-            <img className="w-16 h-16 rounded-full" src='/images/Assets/icon.png' alt="icon" />
+            <img className="w-10 md:w-16 h-10 md:h-16 rounded-full" src='/images/Assets/icon.png' alt="icon" />
           </Link>
         </div>
-        <div className="align-middle font-bold text-lg mt-2 leading-tight font-Heading">
+        <div className="align-middle font-bold text-base md:text-lg mt-2 leading-tight font-Heading">
           <Link to='/'>
             <p>ARISU-CAMP</p>
           </Link>
@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       {/* Links to other pages */}
-      <div className="items-center align-middle font-semibold mt-4 flex">
+      <div className="items-center align-middle text-xs md:text-sm font-semibold mt-4 flex">
         <div className="flex-col align-middle items-center space-y-1">
           <div className="px-2">
             <Link to='/gallery'>
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       {/* Extra meta data */}
-      <div className="flex items-center align-middle font-semibold mt-4 pr-6">
+      <div className="flex items-center align-middle text-xs md:text-sm font-semibold mt-4 pr-6">
         <div className="flex-col align-middle items-center">
           <div className='align-middle'>
           <a target='_blank' href='https://github.com/thevenuz/arisu' title='Guthub repo' className='align-middle flex'>
