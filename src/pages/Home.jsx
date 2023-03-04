@@ -12,7 +12,7 @@ const Home = ({setActivePage, isMobileNavbarOpen = false}) => {
   return (
     <div className={`flex w-full overflow-y-hidden ${isMobileNavbarOpen ? 'hidden' : ''}`}>
       <div className='w-full mx-auto overflow-y-auto no-scrollbar'>
-        <div className='flex-col w-4/5 mx-auto overflow-y-auto no-scrollbar'>
+        <div className='flex-col w-full md:w-4/5 mx-auto overflow-y-auto no-scrollbar'>
               <Welcome/>
               <LandingPageImage/>
               <RecentsSection/>   

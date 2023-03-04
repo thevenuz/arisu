@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import fanfics from '../../data/assets/fanfics/fanfics.json';
 import ShortStories from '../../data/assets/shortstories/ShortStoriesList.json';
-import { Link} from "react-router-dom";
-import { Route, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const RecentsSection = () => {
 
@@ -42,9 +41,9 @@ const RecentsSection = () => {
       <div className='py-2'>
         <p className='  font-bold text-lg'>RECENT ADDITIONS</p>
       </div>
-      <div className='flex space-x-4'>
-        <div className='py-2'>
-          <p className='  font-semibold text-lg pl-2'>Recently added Fanfic</p>
+      <div className='flex flex-wrap space-x-4'>
+        <div className='p-2'>
+          <p className='font-semibold text-lg pl-2'>Recently added Fanfic</p>
           <div className='mt-2 shadow-md p-2 rounded-md'>
             <p className=' my-1 text-lg font-semibold'>{getRecentFanfic().Title}</p>
             <p className=' italic my-1'>by <span className=' font-semibold'>{getRecentFanfic().Author}</span> on <span className=' font-semibold'>{getRecentFanfic().From}</span></p>
@@ -55,7 +54,7 @@ const RecentsSection = () => {
           </div>
         </div>
         <div className='p-2'>
-          <p className='  font-semibold text-lg pl-2'>Recently added Short story</p>
+          <p className='  font-semibold text-lg'>Recently added Short story</p>
           <div className='mt-2 shadow-md p-2 rounded-md'>
             <p className=' my-1 text-lg font-semibold'>{getRecentShortStory().Story.Title}</p>
             <p className=' italic my-1'>from <span className='font-semibold'>{getRecentShortStory().Volume}</span></p>
