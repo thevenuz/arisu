@@ -9,7 +9,6 @@ const Navbar = ({isDarkMode, setIsDarkMode, activePage = PAGES.HOME, setActivePa
   // State
 
   const [page] = useState(window.location.pathname ?? 'home');
-//   const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(() => false);
 
   useEffect(() => {
     const re = /\/(\w*)/g
