@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {memo} from 'react';
 import { Link} from "react-router-dom";
 
-const HamburgerMenu = ({ isMobileNavbarOpen = false, setIsMobileNavbarOpen}) => {
+const HamburgerMenu = memo(({ isMobileNavbarOpen = false, setIsMobileNavbarOpen}) => {
 
     // const [isMobileNavbarOpen, setIsMobileNavbarOpen] = useState(false);
 
@@ -39,6 +39,6 @@ const HamburgerMenu = ({ isMobileNavbarOpen = false, setIsMobileNavbarOpen}) => 
 
     </div>
   );
-}
+});
 
 export default HamburgerMenu;

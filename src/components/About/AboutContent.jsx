@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import Markdown from 'markdown-to-jsx';
 import About from '../../data/content/about.md';
 import AboutSite from '../../data/content/aboutSite.md';
 
-const AboutContent = () => {
+const AboutContent = memo(() => {
 
   // State for markdown content
   const [ content, setContent] = useState({md: ""});
@@ -59,6 +59,6 @@ const AboutContent = () => {
       
     </div>
   )
-}
+});
 
 export default AboutContent;

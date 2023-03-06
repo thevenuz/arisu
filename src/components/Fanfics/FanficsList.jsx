@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import fanfics from '../../data/assets/fanfics/fanfics.json';
 import FanficItem from './FanficItem';
 
-const FanficsList = () => {
+const FanficsList = memo(() => {
   return (
     <div className='flex-1 p-4 w-5/6 mx-auto font-Content min-h-screen'>
         <ul>
@@ -12,6 +12,6 @@ const FanficsList = () => {
         </ul>
     </div>
   )
-}
+});
 
 export default FanficsList

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { memo } from 'react';
 import fanfics from '../../data/assets/fanfics/fanfics.json';
 import ShortStories from '../../data/assets/shortstories/ShortStoriesList.json';
 import { useNavigate } from "react-router-dom";
 
-const RecentsSection = () => {
+const RecentsSection = memo(() => {
 
   const navigate = useNavigate();
 
@@ -69,6 +69,6 @@ const RecentsSection = () => {
       </div>
     </div>
   )
-}
+});
 
 export default RecentsSection;

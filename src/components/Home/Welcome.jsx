@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Welcome = () => {
+const Welcome = memo(() => {
   return (
     // This is for welcome text
     <div className='flex w-full items-center align-middle justify-center'>
@@ -11,6 +11,6 @@ const Welcome = () => {
         </div>
     </div>
   )
-}
+});
 
 export default Welcome;

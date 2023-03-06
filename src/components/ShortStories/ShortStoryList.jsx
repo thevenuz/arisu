@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {memo} from 'react';
 import ShortStories from '../../data/assets/shortstories/ShortStoriesList.json';
 import ShortStoryListItem from './ShortStoryListItem';
 
-const ShortStoryList = () => {
+const ShortStoryList = memo(() => {
   return (
     <div className='flex-1 py-6 px-6'>
       {ShortStories.map((story) => {
@@ -10,6 +10,6 @@ const ShortStoryList = () => {
       })}
     </div>
   )
-}
+});
 
 export default ShortStoryList;
