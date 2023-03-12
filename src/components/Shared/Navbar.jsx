@@ -14,7 +14,6 @@ const Navbar = ({isDarkMode, setIsDarkMode, activePage = PAGES.HOME, setActivePa
     const re = /\/(\w*)/g
     const matchedPage = re.exec(page);
     if(matchedPage && matchedPage[1]){
-        console.log(`page matched: ${matchedPage[1]}`)
         switch(matchedPage[1]){
             case 'home':
                 setCurrentPage(PAGES.HOME);
