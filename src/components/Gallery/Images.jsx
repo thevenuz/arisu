@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import LNIllustrations from '../../data/assets/images/LNIllustrations.json';
 import OfficialArt from '../../data/assets/images/OfficialArt.json';
 import Fanart from '../../data/assets/images/Fanart.json';
 import AIArt from '../../data/assets/images/AIArt.json';
 import ImageCard from './ImageCard';
 import { IMAGETYPES } from '../../enums/ImageType';
+import { PhotoAlbum } from 'react-photo-album';
 
 const Images = ({activeTab}) => {
 
@@ -29,19 +30,36 @@ const Images = ({activeTab}) => {
 
     return LNIllustrations;
   }
+
+  const buildImages=()=>{
+    const images=[];
+    getImages().map((image)=>{
+      images.push({
+        src: image.ImagePath,
+        width: image.Width,
+        height: image.Height,
+        key: image.Id,
+        title: `${activeTab}|${image.Id}`,
+        images:{
+          src: image.ImagePath,
+          width: image.Width,
+          height: image.Height,
+        }
+      })
+    });
+    return images;
+  }
   
-  return (
-    <div className='flex-row flex-1 w-full h-screen mx-auto my-6 shadow-md overflow-y-auto no-scrollbar px-2 md:px-0'>
-      <div className='flex items-center justify-center mx-auto p-1'>
-        {/* <p className=' text-slate-50 font-bold text-3xl font-Heading'>{activeTab.toString().toUpperCase()}</p> */}
-      </div>
-      <div className='columns-2 md:columns-4 gap-x-1 pt-2 '>
-        {getImages().map((image) => {
-          return <ImageCard image={image}/>
-        })}
-      </div>
-    </div>
-  )
+
+return (
+  
+<PhotoAlbum layout='masonry' padding={0} spacing={8}  photos={buildImages()} renderPhoto={ImageCard} columns={(containerWidth) => {
+        if (containerWidth < 200) return 1;
+        if (containerWidth < 400) return 2;
+        if (containerWidth < 800) return 3;
+        return 4;
+    }}/>
+);
 }
 
 export default Images;
