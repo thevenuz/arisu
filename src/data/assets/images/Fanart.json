@@ -328,6 +328,17 @@
         "Width": 300,
         "Height": 210,
         "IsNsfw": false
+    },
+    {
+        "Id":"F31",
+        "Title": "Elegance",
+        "ImagePath": "./images/FanArt/FA_2023042001.png",
+        "Creator": "Vayneeeee",
+        "Source": "https://www.pixiv.net/en/artworks/86193458",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
     }
 
 ]

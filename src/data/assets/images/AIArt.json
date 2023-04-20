@@ -163,5 +163,115 @@
         "Width": 300,
         "Height": 210,
         "IsNsfw": true
+    },
+    {
+        "Id":"A16",
+        "Title": "坂柳有栖 - ゴスロリ",
+        "ImagePath": "./images/AIArt/AI_2023042001.png",
+        "Creator": "Ryousk",
+        "Source": "https://www.pixiv.net/en/artworks/107318757",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A17",
+        "Title": "坂柳有栖 - ゴスロリ",
+        "ImagePath": "./images/AIArt/AI_2023042002.png",
+        "Creator": "Ryousk",
+        "Source": "https://www.pixiv.net/en/artworks/107318757",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A18",
+        "Title": "坂柳有栖 - ゴスロリ",
+        "ImagePath": "./images/AIArt/AI_2023042003.png",
+        "Creator": "Ryousk",
+        "Source": "https://www.pixiv.net/en/artworks/107318757",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A19",
+        "Title": "坂柳有栖ちゃん4",
+        "ImagePath": "./images/AIArt/AI_2023042004.png",
+        "Creator": "鈴見みすず",
+        "Source": "https://www.pixiv.net/en/artworks/107001780",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A20",
+        "Title": "坂柳有栖ちゃん4",
+        "ImagePath": "./images/AIArt/AI_2023042005.png",
+        "Creator": "鈴見みすず",
+        "Source": "https://www.pixiv.net/en/artworks/107001780",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A21",
+        "Title": "Arisu Sakayanagi (2)",
+        "ImagePath": "./images/AIArt/AI_2023042006.png",
+        "Creator": "Alters",
+        "Source": "https://www.pixiv.net/en/artworks/106849272",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A22",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/AIArt/AI_2023042007.png",
+        "Creator": "wakih",
+        "Source": "https://www.pixiv.net/en/artworks/106687730",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A23",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/AIArt/AI_2023042008.png",
+        "Creator": "wakih",
+        "Source": "https://www.pixiv.net/en/artworks/106687730",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A22",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/AIArt/AI_2023042009.png",
+        "Creator": "wakih",
+        "Source": "https://www.pixiv.net/en/artworks/106687730",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"A23",
+        "Title": "Arisu",
+        "ImagePath": "./images/AIArt/AI_2023042010.webp",
+        "Creator": "ayanokoji_class",
+        "Source": "https://www.pixiv.net/en/artworks/106280484",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
     }
 ]
