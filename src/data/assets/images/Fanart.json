@@ -383,6 +383,50 @@
         "Width": 300,
         "Height": 210,
         "IsNsfw": false
+    },
+    {
+        "Id":"F36",
+        "Title": "有栖ちゃんに飼われたい",
+        "ImagePath": "./images/FanArt/FA_2023060301.jpg",
+        "Creator": "くろすけさん",
+        "Source": "https://www.pixiv.net/en/artworks/94858444",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"F37",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/FanArt/FA_2023060302.jpg",
+        "Creator": "綾郷",
+        "Source": "https://www.pixiv.net/en/artworks/89802270",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"F38",
+        "Title": "私と一勝負、いかがですか？",
+        "ImagePath": "./images/FanArt/FA_2023060303.jpg",
+        "Creator": "宇都宮リョウ",
+        "Source": "https://www.pixiv.net/en/artworks/88960715",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"F39",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/FanArt/FA_2023060304.jpg",
+        "Creator": "或",
+        "Source": "https://www.pixiv.net/en/artworks/90553716",
+        "SourceFrom":"Pixiv",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
     }
 
 ]
