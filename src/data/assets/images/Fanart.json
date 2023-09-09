@@ -427,6 +427,17 @@
         "Width": 300,
         "Height": 210,
         "IsNsfw": false
+    },
+    {
+        "Id":"F40",
+        "Title": "坂柳有栖",
+        "ImagePath": "./images/FanArt/FA_2023090901.jpg",
+        "Creator": "ichinose7kzt",
+        "Source": "https://twitter.com/ichinose7kzt/status/1682969679521009665",
+        "SourceFrom":"Twitter",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
     }
 
 ]
