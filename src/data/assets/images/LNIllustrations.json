@@ -207,5 +207,38 @@
         "Width": 300,
         "Height": 210,
         "IsNsfw": false
+    },
+    {
+        "Id":"L20",
+        "Title": "from Year 2, Volume 9.5",
+        "ImagePath": "./images/LNllustrations/LN-Y2Vol9.5-01.jpg",
+        "Creator": "Tomose Shunsaku",
+        "Source": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_9.5/Illustrations?file=LN_2nd_Vol_9.5-00.jpg",
+        "SourceFrom":"",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"L21",
+        "Title": "from Year 2, Volume 9.5",
+        "ImagePath": "./images/LNllustrations/LN-Y2Vol9.5-02.jpg",
+        "Creator": "Tomose Shunsaku",
+        "Source": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_9.5/Illustrations?file=LN_2nd_Vol_9.5-02.jpg",
+        "SourceFrom":"",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
+    },
+    {
+        "Id":"L22",
+        "Title": "from Year 2, Volume 9.5",
+        "ImagePath": "./images/LNllustrations/LN-Y2Vol9.5-03.jpg",
+        "Creator": "Tomose Shunsaku",
+        "Source": "https://you-zitsu.fandom.com/wiki/Light_Novel_2nd_Year_Volume_9.5/Illustrations?file=LN_2nd_Vol_9.5-06.jpg",
+        "SourceFrom":"",
+        "Width": 300,
+        "Height": 210,
+        "IsNsfw": false
     }
 ]
